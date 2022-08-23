@@ -16,11 +16,21 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul className='flex'>
-          <li className='px-5 text-[#9698a6] '>Home</li>
-          <li className='px-5 text-[#9698a6] '>About</li>
-          <li className='px-5 text-[#9698a6] '>Contact</li>
-          <li className='px-5 text-[#9698a6] '>Blog</li>
-          <li className='px-5 text-[#9698a6] '>Careers</li>
+          <li className='px-5 text-[#9698a6] '>
+            <Link to='/'>Home</Link>
+          </li>
+          <li className='px-5 text-[#9698a6] '>
+            <Link to='/'>About</Link>
+          </li>
+          <li className='px-5 text-[#9698a6] '>
+            <Link to='/'>Contact</Link>
+          </li>
+          <li className='px-5 text-[#9698a6] '>
+            <Link to='/'>Blog</Link>
+          </li>
+          <li className='px-5 text-[#9698a6] '>
+            <Link to='/'>Careers</Link>
+          </li>
         </ul>
 
         {/* Invite Button */}
