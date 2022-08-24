@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <header className='w-full h-[90px] px-4'>
+    <header className='w-full h-[90px] px-4 z-10'>
       <nav className='max-w-[1440px] w-full h-full flex justify-between items-center mx-auto'>
 
         {/* Logo */}
@@ -20,13 +20,13 @@ const Navbar = () => {
             <Link to='/'>Home</Link>
           </li>
           <li className='px-5 text-[#9698a6] '>
-            <Link to='/'>About</Link>
+            <Link to='/about'>About</Link>
           </li>
           <li className='px-5 text-[#9698a6] '>
-            <Link to='/'>Contact</Link>
+            <Link to='/contact'>Contact</Link>
           </li>
           <li className='px-5 text-[#9698a6] '>
-            <Link to='/'>Blog</Link>
+            <Link to='/blog'>Blog</Link>
           </li>
           <li className='px-5 text-[#9698a6] '>
             <Link to='/'>Careers</Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* Invite Button */}
         <button className='xl:hidden'>Request Invite</button>
 
-        {/* Open and close menu button */}
+        {/* Open and close menu button for mobile menu*/}
         
       </nav>
     </header>
