@@ -3,18 +3,18 @@ import HomeImg from '../assets/image-mockups.png';
 
 const Homepage = () => {
   return (
-    <div className='bg-[#fafafa] w-full h-[70vh]'>
+    <div className='bg-[#fafafa] w-full h-fit'>
 
-      <div className='home-grid max-w-[1440px] grid grid-cols-2 mx-auto'>
+      <div className='home-grid grid grid-cols-2'>
         {/* Home text */}
-        <div className='home-info'>
+        <div className='home-info flex flex-col justify-center max-w-[650px] w-full mx-auto px-8'>
 
-          <div className='text-6xl text-[#2d314d] pt-52'>
+          <div className='text-6xl text-[#2d314d]'>
             <h1>Next generation</h1>
             <h1>digital banking</h1>
           </div>
 
-          <p className='text-[#9698a6] text-xl py-12 pr-48'>
+          <p className='text-[#9698a6] text-xl py-12'>
             Take your financial life online. Your Easybank account
             will be a one-stop-shop for spending, saving, budgeting,
             investing, and much more.
@@ -25,8 +25,9 @@ const Homepage = () => {
         </div>
 
         {/* Home image */}
-        <div className='bg-desktop'>
-          <img className='absolute right-1' src={HomeImg}/>
+
+        <div className='right relative z-10'>
+          <img className='' src={HomeImg}/>
         </div>
         
 

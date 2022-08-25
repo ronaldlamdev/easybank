@@ -21,6 +21,10 @@
     @apply font-['Public_Sans']
   }
 
+  body {
+    @apply overflow-x-hidden
+  }
+
   button {
     @apply bg-gradient-to-r from-[#31d35c] to-[#2bb7da]
     text-white px-7 py-3 rounded-full
@@ -31,7 +35,22 @@
   @apply flex flex-col
 }
 
-.bg-desktop {
-  background: url('./assets//bg-intro-desktop.svg') no-repeat right;
+/* .home-bg {
+  background-image: url('./assets/bg-intro-desktop.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top -200px right -600px;
   background-size: cover;
+} */
+.right::before {
+  content: '';
+  background-image: url('./assets/bg-intro-desktop.svg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  z-index: -1;
 }
