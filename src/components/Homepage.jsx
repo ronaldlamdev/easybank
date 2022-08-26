@@ -27,7 +27,7 @@ const Homepage = () => {
         {/* Home image */}
 
         <div className='right relative z-10'>
-          <img className='' src={HomeImg}/>
+          <img className='w-full' src={HomeImg}/>
         </div>
         
 
