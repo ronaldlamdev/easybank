@@ -35,13 +35,6 @@
   @apply flex flex-col
 }
 
-/* .home-bg {
-  background-image: url('./assets/bg-intro-desktop.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: top -200px right -600px;
-  background-size: cover;
-} */
 .right::before {
   content: '';
   background-image: url('./assets/bg-intro-desktop.svg');
