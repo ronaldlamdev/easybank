@@ -4,7 +4,8 @@ import {FaFacebookSquare,
         FaYoutube, 
         FaTwitter, 
         FaPinterest,
-        FaInstagram} from 'react-icons/fa'
+        FaInstagram} from 'react-icons/fa';
+        
 
 const Footer = () => {
   return (
