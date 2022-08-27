@@ -7,30 +7,26 @@ import API from '../assets/icon-api.svg';
 const AboutPage = () => {
   return (
     <div className='w-full h-screen bg-[#f3f4f6]'>
-      <div className='max-w-[1680px] h-full mx-auto px-8 flex flex-col justify-center'>
+      <div className='max-w-[1680px] h-full mx-auto px-20 flex flex-col justify-center gap-12'>
 
         {/* Upper About Text */}
-        <div>
-
-          <div>
-            <h1>Why Choose Easybank?</h1>
-            <p>
-              We leverage Open Banking to turn your bank account
-              into your financial hub. Control your finances like
-              never before. 
-            </p>
-          </div>
-          
+        <div className='max-w-[50%]'>
+          <h1 className='text-[#2d314d] text-[2.75rem]'>Why Choose Easybank?</h1>
+          <p className='text-[#9698a6] text-xl my-8'>
+            We leverage Open Banking to turn your bank account
+            into your financial hub. Control your finances like
+            never before. 
+          </p>       
         </div>
 
         {/* Lower About Text */}
-        <div>
+        <div className='flex justify-between gap-4'>
 
           {/* First column */}
           <div>
             <img src={Banking}/>
-            <h3>Online Banking</h3>
-            <p>
+            <h3 className='text-[#2d314d] text-2xl my-8'>Online Banking</h3>
+            <p className='text-[#9698a6] text-[1.1rem]'>
               Our modern web and mobile applications allow
               you to keep track of your finances wherever you 
               are in the world.
@@ -40,8 +36,8 @@ const AboutPage = () => {
           {/* Second column */}
           <div>
             <img src={Budgeting}/>
-            <h3>Simple Budgeting</h3>
-            <p>
+            <h3 className='text-[#2d314d] text-2xl my-8'>Simple Budgeting</h3>
+            <p className='text-[#9698a6] text-[1.1rem]'>
               See exactly where your money goes each month. Receive 
               notifications when you're close to hitting your limits.
             </p>
@@ -50,8 +46,8 @@ const AboutPage = () => {
           {/* Third column */}
           <div>
             <img src={Onboarding}/>
-            <h3>Fast Onboarding</h3>
-            <p>
+            <h3 className='text-[#2d314d] text-2xl my-8'>Fast Onboarding</h3>
+            <p className='text-[#9698a6] text-[1.1rem]'>
               We don't do branches. Open your account in minutes
               online and start taking control of your finances 
               right away. 
@@ -61,8 +57,8 @@ const AboutPage = () => {
           {/* Open API */}
           <div>
             <img src={API}/>
-            <h3>Open API</h3>
-            <p>
+            <h3 className='text-[#2d314d] text-2xl my-8'>Open API</h3>
+            <p className='text-[#9698a6] text-[1.1rem]'>
               Manage your savings, investments, pension, and
               much more from one account. Tracking your money 
               has never been easier. 
