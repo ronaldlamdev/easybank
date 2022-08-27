@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
+import { Link as Scroll } from 'react-scroll';
 
 const Navbar = () => {
   return (
@@ -22,8 +23,10 @@ const Navbar = () => {
           <li className='px-5 text-[#9698a6] '>
             <Link to='/about'>About</Link>
           </li>
-          <li className='px-5 text-[#9698a6] '>
-            <Link to='/contact'>Contact</Link>
+          <li className='px-5 text-[#9698a6] cursor-pointer'>
+            <Scroll to="contact" smooth={true} duration={500}>
+              Contact
+            </Scroll>
           </li>
           <li className='px-5 text-[#9698a6] '>
             <Link to='/blog'>Blog</Link>

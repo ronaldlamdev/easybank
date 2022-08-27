@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='w-full h-[220px] bg-[#2d314d]'>
+    <footer name="contact" className='w-full h-[220px] bg-[#2d314d]'>
       <div className='max-w-[1680px] w-full h-full mx-auto px-20 py-10 flex justify-between'>
         
         {/* Left side */}
