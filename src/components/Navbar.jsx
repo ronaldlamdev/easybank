@@ -16,22 +16,22 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className='flex items-center xl:absolute xl:flex-col xl:justify-center xl:items-center xl:w-full xl:'>
-          <li className='px-5 text-[#9698a6] '>
+        <ul className='flex items-center h-full xl:absolute xl:flex-col xl:justify-center xl:items-center xl:w-full'>
+          <li className='px-5 text-[#9698a6] h-full flex items-center cursor-pointer relative hover:text-[#2d314d] duration-300 hover-anim'>
             <Link to='/'>Home</Link>
           </li>
-          <li className='px-5 text-[#9698a6] '>
+          <li className='px-5 text-[#9698a6] flex items-center cursor-pointer h-full relative hover:text-[#2d314d] duration-300 hover-anim'>
             <Link to='/about'>About</Link>
           </li>
-          <li className='px-5 text-[#9698a6] cursor-pointer'>
+          <li className='px-5 text-[#9698a6] h-full flex items-center cursor-pointer relative hover:text-[#2d314d] duration-300 hover-anim'>
             <Scroll to="contact" smooth={true} duration={500}>
               Contact
             </Scroll>
           </li>
-          <li className='px-5 text-[#9698a6] '>
+          <li className='px-5 text-[#9698a6] h-full flex items-center cursor-pointer relative hover:text-[#2d314d] duration-300 hover-anim'>
             <Link to='/blog'>Blog</Link>
           </li>
-          <li className='px-5 text-[#9698a6] cursor-pointer'>
+          <li className='px-5 text-[#9698a6] h-full flex items-center cursor-pointer relative hover:text-[#2d314d] duration-300 hover-anim'>
             Careers
           </li>
         </ul>

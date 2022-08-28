@@ -6,6 +6,7 @@ import {FaFacebookSquare,
         FaPinterest,
         FaInstagram} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Link as Scroll } from 'react-scroll';
 
 
 const Footer = () => {
@@ -27,27 +28,27 @@ const Footer = () => {
 
             {/* Social icons */}
             <div className='flex'>
-              <FaFacebookSquare size={25} className='text-white mr-3'/>
-              <FaYoutube size={25} className='text-white mr-3'/>
-              <FaTwitter size={25} className='text-white mr-3'/>
-              <FaPinterest size={25} className='text-white mr-3'/>
-              <FaInstagram size={25} className='text-white'/>
+              <FaFacebookSquare size={25} className='text-white mr-3 hover:text-[#31d35c] duration-300 cursor-pointer'/>
+              <FaYoutube size={25} className='text-white mr-3 hover:text-[#31d35c] duration-300 cursor-pointer'/>
+              <FaTwitter size={25} className='text-white mr-3 hover:text-[#31d35c] duration-300 cursor-pointer'/>
+              <FaPinterest size={25} className='text-white mr-3 hover:text-[#31d35c] duration-300 cursor-pointer'/>
+              <FaInstagram size={25} className='text-white hover:text-[#31d35c] duration-300 cursor-pointer'/>
             </div>
 
           </div>
 
           {/* Second column */}
           <div className='flex flex-col justify-evenly'>
-            <Link className='text-white' to='/contact'>Contact</Link>
-            <Link className='text-white' to='/about'>About Us</Link>
-            <Link className='text-white' to='/blog'>Blog</Link>
+            <Scroll className='text-white hover:text-[#31d35c] duration-300 cursor-pointer' to="contact" smooth={true} duration={500}>Contact</Scroll>
+            <Link className='text-white hover:text-[#31d35c] duration-300' to='/about'>About Us</Link>
+            <Link className='text-white hover:text-[#31d35c] duration-300' to='/blog'>Blog</Link>
           </div>
 
           {/* Third column */}
           <div className='flex flex-col justify-evenly'>
-            <p className='text-white cursor-pointer' >Careers</p>
-            <p className='text-white cursor-pointer' >Support</p>
-            <p className='text-white cursor-pointer' >Privacy Policy</p>
+            <p className='text-white cursor-pointer hover:text-[#31d35c] duration-300' >Careers</p>
+            <p className='text-white cursor-pointer hover:text-[#31d35c] duration-300' >Support</p>
+            <p className='text-white cursor-pointer hover:text-[#31d35c] duration-300' >Privacy Policy</p>
           </div>
 
         </div>
