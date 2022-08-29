@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
+import { FaBars ,FaTimes} from 'react-icons/fa'
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className='flex items-center h-full xl:absolute xl:flex-col xl:justify-center xl:items-center xl:w-full'>
+        <ul className='flex items-center h-full md:fixed md:top-4 md:bg-white md:h-[400px] md:mx-auto md:hidden'>
           <li className='px-5 text-[#9698a6] h-full flex items-center cursor-pointer relative hover:text-[#2d314d] duration-300 hover-anim'>
             <Link to='/'>Home</Link>
           </li>
@@ -40,6 +41,7 @@ const Navbar = () => {
         <button className='xl:hidden'>Request Invite</button>
 
         {/* Open and close menu button for mobile menu*/}
+        <FaBars size={20} className="hidden"/>
 
       </nav>
     </header>
