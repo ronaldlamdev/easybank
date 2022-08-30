@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className={nav ? 'md:absolute md:w-full md:h-screen md:top-0 md:left-0 md:bg-[#2d314d] md:opacity-30 md:z-[-1]' : 'hidden'}></div>
 
         {/* Mobile menu */}
-        {nav ? <div className='hidden md:fixed md:flex md:flex-col md:top-36 md:mx-auto md:justify-center md:bg-white md:w-[400px] md:h-[300px] md:rounded-md md:items-center'>
+        {nav ? <div className='hidden md:fixed md:flex md:flex-col md:top-36 md:left-0 md:justify-center md:ml-[12.5%] md:bg-white md:w-[75%] md:max-w-[750px] md:py-4 md:rounded-md md:items-center'>
           <Link className='text-[#2d314d] pb-4' to='/'>Home</Link>
           <Link className='text-[#2d314d] py-4' to='/about'>About</Link>
           <Scroll className='text-[#2d314d] py-4' to="contact" smooth={true} duration={500}>Contact</Scroll>
