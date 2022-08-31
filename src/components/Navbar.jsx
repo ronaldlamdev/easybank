@@ -49,18 +49,18 @@ const Navbar = () => {
         <button className='xl:hidden'>Request Invite</button>
 
         {/* Open and close menu button for mobile menu*/}
-        {nav ? <FaTimes size={23} onClick={handleNav} className='md:flex hidden z-20 text-black'/> : <FaBars size={21} onClick={handleNav} className='md:flex hidden'/>}
+        {nav ? <FaTimes size={23} onClick={handleNav} className='md:flex hidden z-20 text-white cursor-pointer'/> : <FaBars size={21} onClick={handleNav} className='md:flex hidden cursor-pointer'/>}
 
         {/* Background color change for mobile menu */}
-        <div className={nav ? 'md:absolute md:w-full md:h-screen md:top-0 md:left-0 md:bg-[#2d314d] md:opacity-30 md:z-[-1]' : 'hidden'}></div>
+        <div className={nav ? 'md:absolute md:w-full md:h-screen md:top-0 md:left-0 md:bg-[#2d314d] md:opacity-70 md:z-[-1]' : 'hidden'}></div>
 
         {/* Mobile menu */}
         {nav ? <div className='hidden md:fixed md:flex md:flex-col md:top-36 md:left-0 md:right-0 md:mx-auto md:justify-center md:bg-white md:w-[100%] md:max-w-[450px] md:py-4 md:rounded-md md:items-center'>
           <Link className='text-[#2d314d] pb-4' to='/'>Home</Link>
           <Link className='text-[#2d314d] py-4' to='/about'>About</Link>
-          <Scroll className='text-[#2d314d] py-4' to="contact" smooth={true} duration={500}>Contact</Scroll>
+          <Scroll className='text-[#2d314d] py-4 cursor-pointer' to="contact" smooth={true} duration={500}>Contact</Scroll>
           <Link className='text-[#2d314d] py-4' to='/blog'>Blog</Link>
-          <span className='text-[#2d314d] pt-4'>Careers</span>
+          <span className='text-[#2d314d] pt-4 cursor-pointer'>Careers</span>
         </div> : ''}
 
       </nav>

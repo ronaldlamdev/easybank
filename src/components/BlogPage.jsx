@@ -6,15 +6,15 @@ import Confetti from '../assets/image-confetti.jpg';
 
 const BlogPage = () => {
   return (
-    <div className='w-full h-screen bg-[#fafafa]'>
-      <div className='w-full h-full mx-auto px-20 max-w-[1680px] flex flex-col justify-center gap-12'>
-        <h1 className='text-[#2d314d] text-4xl'>Latest Articles</h1>
+    <div className='w-full h-screen bg-[#fafafa] xl:h-fit xl:py-36'>
+      <div className='w-full h-full mx-auto px-20 max-w-[1680px] flex flex-col justify-center gap-12 lg:px-4'>
+        <h1 className='text-[#2d314d] text-4xl lg:text-center'>Latest Articles</h1>
 
         {/* Blogs Container */}
-        <div className='flex justify-between gap-8'>
+        <div className='flex justify-between gap-8 lg:flex-col '>
 
           {/* 1st Blog */}
-          <div className='bg-white rounded-b-lg shadow-sm'>
+          <div className='bg-white rounded-b-lg shadow-sm lg:max-w-[500px] lg:mx-auto'>
             {/* Image container */}
             <div>
               <img className='rounded-t-lg h-[250px] w-full' src={Currency} />
@@ -36,7 +36,7 @@ const BlogPage = () => {
           </div>
 
           {/* 2nd Blog */}
-          <div className='bg-white rounded-b-lg shadow-sm'>
+          <div className='bg-white rounded-b-lg shadow-sm lg:max-w-[500px] lg:mx-auto'>
             {/* Image container */}
             <div>
               <img className='rounded-t-lg h-[250px] w-full' src={Restaurant} />
@@ -59,7 +59,7 @@ const BlogPage = () => {
           </div>
 
           {/* 3rd Blog */}
-          <div className='bg-white rounded-b-lg shadow-sm'>
+          <div className='bg-white rounded-b-lg shadow-sm lg:max-w-[500px] lg:mx-auto'>
             {/* Image container */}
             <div>
               <img className='rounded-t-lg h-[250px] w-full' src={Plane} />
@@ -80,7 +80,7 @@ const BlogPage = () => {
           </div>
 
           {/* 4th Blog */}
-          <div className='bg-white rounded-b-lg shadow-sm'>
+          <div className='bg-white rounded-b-lg shadow-sm lg:max-w-[500px] lg:mx-auto'>
             {/* Image container */}
             <div>
               <img className='rounded-t-lg h-[250px] w-full' src={Confetti} />
