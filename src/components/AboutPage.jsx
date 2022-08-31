@@ -6,13 +6,13 @@ import API from '../assets/icon-api.svg';
 
 const AboutPage = () => {
   return (
-    <div className='w-full h-screen bg-[#f3f4f6]'>
-      <div className='max-w-[1680px] h-full mx-auto px-20 flex flex-col justify-center gap-12'>
+    <div className='w-full h-screen md:h-fit bg-[#f3f4f6]'>
+      <div className='max-w-[1680px] h-full mx-auto px-20 flex flex-col justify-center md:items-center gap-12 lg:gap-0'>
 
         {/* Upper About Text */}
-        <div className='max-w-[50%]'>
-          <h1 className='text-[#2d314d] text-[2.75rem]'>Why Choose Easybank?</h1>
-          <p className='text-[#9698a6] text-xl my-8'>
+        <div className='max-w-[50%] md:max-w-[100%] md:flex md:flex-col md:items-center md:text-center lg:pt-32'>
+          <h1 className='text-[#2d314d] text-[2.75rem] md:text-[2rem]'>Why Choose Easybank?</h1>
+          <p className='text-[#9698a6] text-xl md:text-lg my-8'>
             We leverage Open Banking to turn your bank account
             into your financial hub. Control your finances like
             never before. 
@@ -20,12 +20,12 @@ const AboutPage = () => {
         </div>
 
         {/* Lower About Text */}
-        <div className='flex justify-between gap-4'>
+        <div className='flex justify-between gap-4 md:flex-col md:items-center md:py-12'>
 
           {/* First column */}
-          <div>
+          <div className='md:flex md:flex-col md:items-center md:text-center'>
             <img src={Banking}/>
-            <h3 className='text-[#2d314d] text-2xl my-8'>Online Banking</h3>
+            <h3 className='text-[#2d314d] text-2xl my-8 md:text-'>Online Banking</h3>
             <p className='text-[#9698a6] text-[1.1rem]'>
               Our modern web and mobile applications allow
               you to keep track of your finances wherever you 
@@ -34,7 +34,7 @@ const AboutPage = () => {
           </div>
 
           {/* Second column */}
-          <div>
+          <div className='md:flex md:flex-col md:items-center md:text-center'>
             <img src={Budgeting}/>
             <h3 className='text-[#2d314d] text-2xl my-8'>Simple Budgeting</h3>
             <p className='text-[#9698a6] text-[1.1rem]'>
@@ -44,7 +44,7 @@ const AboutPage = () => {
           </div>
 
           {/* Third column */}
-          <div>
+          <div className='md:flex md:flex-col md:items-center md:text-center'>
             <img src={Onboarding}/>
             <h3 className='text-[#2d314d] text-2xl my-8'>Fast Onboarding</h3>
             <p className='text-[#9698a6] text-[1.1rem]'>
@@ -54,8 +54,8 @@ const AboutPage = () => {
             </p>
           </div>
 
-          {/* Open API */}
-          <div>
+          {/* Fourth column*/}
+          <div className='md:flex md:flex-col md:items-center md:text-center'>
             <img src={API}/>
             <h3 className='text-[#2d314d] text-2xl my-8'>Open API</h3>
             <p className='text-[#9698a6] text-[1.1rem]'>
